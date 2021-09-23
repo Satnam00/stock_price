@@ -45,10 +45,10 @@ pytz==2021.1
 PyYAML==5.4.1
 regex==2021.4.4
 requests==2.26.0
-scikit-learn==0.22.2.post1
-scipy==1.5.4
+#scikit-learn==0.22.2.post1
+#scipy==1.5.4
 six==1.16.0
-sklearn==0.0
+#sklearn==0.0
 soupsieve==2.2.1
 sqlparse==0.4.1
 sshtunnel==0.4.0
