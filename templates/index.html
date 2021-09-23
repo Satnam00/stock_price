@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<Body {
+background="https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+
+
+<head>
+<style>
+  body {
+    background-color: #58D68D;
+    
+  <meta charset="UTF-8">
+  <title>Travel Back</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='2.jpg') }}">
+
+
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+<style>
+    .login{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+   <div class="login">
+  <h1>Stock Stats</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="/generate" method="POST">
+      <input type="text" name="sym" placeholder="Symbol" required="required" /><br><br>
+      <input type="date" name="start" placeholder="Start Date" required="required" /><br><br>
+      <input type="date" name="end" placeholder="End Date" required="required" /><br><br>
+      <button type="submit" class="btn btn-primary btn-block btn-large">Get Report</button>
+    </form>
+
+   <br>
+   <br>
+   <a href="{{ url_for('.download_report') }}">Generate Excel Report</a>
+   <!-- {{ prediction_text }} -->
+
+ </div>
+
+
+</body>
+</html>
+
+
+<!--        <input type="number" name="rating" placeholder="Rating" required="required" /><br><br>
+ <input type="number" name="Minimum Distance" placeholder="Minimum Distance" required="required" /><br><br>
+      <input type="number" name="Maximum Distance" placeholder="Maximum Distance" required="required" /><br><br>
+      <input type="text" name="cuisine" placeholder="cuisine" required="required" /><br><br> -->
+
+      <!-- "https://1.bp.blogspot.com/-sTxAHAxirGM/WVbAe2098nI/AAAAAAABENs/_I5sYMYgLOUzaIE7FfF4qdGX-hoAkq9SgCLcBGAs/s1600/Blog_20170624_113552.jpg"> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<img src="{{ url_for('static', filename = '1.png')}}">
+<form>
+  <label for="sym">Stock Symbol:</label><br>
+  <input type="text" id="sym" name="sym"><br><br>
+
+  <label for="start">Start Date:</label><br>
+  <input type="text" id="start" name="start"><br><br>
+
+  <label for="end">End Date:</label><br>
+  <input type="text" id="end" name="end"><br><br> 
+  <button>submit</button>  type="submit" value="Submit">
+</form>
+</body>
+</html>> -->
