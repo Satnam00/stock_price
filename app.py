@@ -375,4 +375,4 @@ def about1():
     name = 'satnam g'
     return render_template('boot.html', name = name)
 
-app.run()
+app.run(debug=False, host = '0.0.0.0')
